@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -81,8 +82,8 @@ const Navbar = () => {
               Jakarta
             </div>
 
-            <a href="#" className="btn-outline" style={{ padding: '8px 18px', fontSize: '0.8rem' }}>Masuk</a>
-            <a href="#" className="btn-primary" style={{ padding: '8px 18px', fontSize: '0.8rem' }}>Daftar</a>
+            <Link to="/login"    className="btn-outline" style={{ padding: '8px 18px', fontSize: '0.8rem' }}>Masuk</Link>
+            <Link to="/register" className="btn-primary" style={{ padding: '8px 18px', fontSize: '0.8rem' }}>Daftar</Link>
 
             {/* Mobile hamburger */}
             <button
